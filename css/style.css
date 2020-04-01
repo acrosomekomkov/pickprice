@@ -41,6 +41,9 @@ img {
     display: block;
 }
 
+
+/* Шапка */
+
 header {
     display: flex;
     align-items: center;
@@ -104,4 +107,54 @@ header .header_basket {
     color: #ffffff;
     font-size: 18px;
     font-weight: 400;
+}
+
+
+/* Под шапка */
+
+.subheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    box-shadow: 0 0 9px rgba(0, 0, 2, 0.16);
+}
+
+.subheader_catalog {
+    display: flex;
+    align-items: center;
+}
+
+.catalog_icon {
+    margin-right: 10px;
+}
+
+.catalog_descr {
+    color: #260101;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.subheader_search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 772px;
+    height: 36px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.19);
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.search_button {
+    width: 82px;
+    height: 23px;
+    border: 2px solid #ff4ec1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #ff00a5;
+    margin-right: 30px;
+    border-radius: 10px;
 }
