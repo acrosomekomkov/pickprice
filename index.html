@@ -14,20 +14,20 @@
     <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
                     <div class="header_logo">
                         <img src="icons/logo.png" alt="">
                     </div>
                 </div>
-                <div class="col-md-2 offset-1">
+                <div class="d-none d-lg-block col-lg-2 offset-1">
                     <div class="header_location  ">
                         <img src="icons/location.png" class="location_icon" alt="location">
                         <div class="location_descr">Боровск</div>
                     </div>
                 </div>
-                <div class="col-md-4 offset-1">
+                <div class=" col-6 col-sm-6 col-md-6 col-lg-5 offset-lg-1 phone_adaptation">
                     <div class="header_items">
-                        <div class="header_phone">
+                        <div class="header_phone d-none d-md-flex">
                             <img src="icons/phone_icon.png" alt="phone" class="phone_icon">
                             <div class="phone_descr"><a href="tel:88002226606">8-800-222-66-06</a></div>
                         </div>
@@ -44,7 +44,7 @@
     <section class="subheader py-0">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 d-flex ">
+                <div class="d-none d-lg-flex col-lg-3  subheader_lg ">
                     <div class="catalog_main d-flex align-items-center">
                         <div class="subheader_catalog">
                             <img src="icons/hamburger.png" class="catalog_icon" alt="catalog">
@@ -52,7 +52,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7 py-1">
+
+                <div class="d-lg-none d-flex col-6 subheader_md ">
+                    <nav class="mobile-menu">
+                        <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+                        <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+                        <div class="mobile-menu__container">
+                            <ul class="mobile-menu__list">
+                                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Home</a></li>
+                                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">About us</a></li>
+                                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Work</a></li>
+                                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+
+
+                <div class="col-6 col-sm-6 col-md-6 col-lg-7 offset-lg-2 py-1">
                     <div class="subheader_search">
                         <button class="search_button">Поиск</button>
                     </div>
