@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPT-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT Bold';
+    src: url('fonts/FuturaPT-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPT-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT Demi';
+    src: url('fonts/FuturaPT-Demi.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT Book';
+    src: url('fonts/FuturaPT-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Futura PT';
+}
+
+img {
+    display: block;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 68px;
+    background-color: #252525;
+}
+
+header .header_location {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.location_icon {
+    margin-right: 10px;
+}
+
+.location_descr {
+    color: #eeeeee;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header_phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone_icon {
+    margin-right: 10px;
+}
+
+.phone_descr {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.phone_descr a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+header .header_basket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basket_icon {
+    margin-right: 10px;
+}
+
+.basket_descr {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
