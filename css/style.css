@@ -116,11 +116,51 @@ header .header_basket {
 
 /* Под шапка */
 
+.sticky-top {
+    z-index: 9999999999999;
+    position: sticky;
+    top: 0;
+}
+
+.mobile_logo {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile_menu_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile_phone {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile_menu_phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile_phone_descr {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.mobile_phone_descr a {
+    font-size: 26px;
+    font-weight: 400;
+    color: black;
+}
+
 .subheader {
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 9px rgba(0, 0, 2, 0.16);
+    position: sticky;
 }
 
 .subheader_catalog {
@@ -137,6 +177,16 @@ header .header_basket {
 }
 
 .catalog_descr {
+    color: #260101;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.checkbox_text {
+    position: absolute;
+    top: -10px;
+    left: 42px;
     color: #260101;
     font-size: 16px;
     font-weight: 600;
