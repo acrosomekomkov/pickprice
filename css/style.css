@@ -353,16 +353,19 @@ header .header_basket {
     opacity: 1;
     transition: 0.5s;
     transition-delay: 0.2s;
-    overflow: hidden;
-    background-color: #27ae60;
+    overflow-y: auto;
+    background-color: #f0f0f0;
 }
 
 .mobile-menu__list {
+    position: absolute;
+    top: 100px;
     transition: 0.5s;
     transition-delay: 0.5s;
     list-style: none;
     padding-left: 0;
     margin-top: -50px;
+    width: 100%;
 }
 
 .mobile-menu__item {
@@ -437,7 +440,7 @@ header .header_basket {
     background-color: #bebebe;
 } */
 
-.dropdown_items .first_row {
+.first_row {
     border-bottom: 1px solid #d9d9d9;
     padding-bottom: 30px;
 }
@@ -445,7 +448,74 @@ header .header_basket {
 
 }
 @media (max-width: 1199.98px) {}
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+    .dropdown_item {
+        flex-direction: column;
+        margin-top: 45px;
+    }
+    
+    .dropdown_descr {
+        padding: 10px 0;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .dropdown_image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        background: #fff;
+        width: 75px;
+        height: 75px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    
+    .dropdown_image img {
+        max-width: 50px;
+    }
+    
+    .restriction {
+        left: 0;
+        justify-content: center;
+        margin: 50px 0 15px 0;
+    }
+    
+    .restriction_descr {
+        font-size: 20px;
+        line-height: 1em;
+    }
+    
+    .restriction_icon {
+        max-width: 30px;
+    }
+    
+    .dropdown_item2:hover .dropdown_descr2 {
+        color: red
+    }
+    
+    .dropdown_item2:hover::after {
+        width: 0;
+    }
+    
+    .dropdown_item:hover .dropdown_descr2 {
+        color: #FF41C2;
+    }
+    
+    .dropdown_item:hover::after {
+        width: 0;
+    }
+    
+    .dropdown_descr2 {
+        font-size: 18px;
+        padding: 10px 0;
+        font-weight: 400;
+    }
+    
+    .dropdown_item2 {
+        padding: 25px 0px;
+    }
+}
 @media (max-width: 767.98px) {
     .phone_adaptation {
         display: flex;
